@@ -1,0 +1,27 @@
+{
+  "mode": "exe",
+  "penalty_exitcode_nonzero": 0.75,
+  "penalty_valgrind": 0.5,
+  "test_suites": {
+    "kv_cache_test": {
+      "tests": [
+        { "desc": "t1: 4 bins 3 keys",  "args": ["-b", "4", "-t", "1"],  "valgrind": true, "points": 2 },
+        { "desc": "t1: 13 bins 3 keys",  "args": ["-b", "13", "-t", "1"],  "valgrind": true, "points": 2 },
+        { "desc": "t2: 4 bins 3 keys",  "args": ["-b", "4", "-t", "2"],  "valgrind": true, "points": 2 },
+        { "desc": "t2: 13 bins 3 keys",  "args": ["-b", "13", "-t", "2"],  "valgrind": true, "points": 2 },
+        { "desc": "t3: lru1: 4 bins 8 keys",  "args": ["-b", "4", "-t", "3"],  "valgrind": true, "points": 6 },
+        { "desc": "t3: lru1: 13 bins 8 keys",  "args": ["-b", "13", "-t", "3"],  "valgrind": true, "points": 6 },
+        { "desc": "t4: lru2: 4 bins 8 keys",  "args": ["-b", "4", "-t", "4"],  "valgrind": true, "points": 8 },
+        { "desc": "t4: lru2: 13 bins 8 keys",  "args": ["-b", "13", "-t", "4"],  "valgrind": true, "points": 8 },
+        { "desc": "t5: lru3: 4 bins 8 keys",  "args": ["-b", "4", "-t", "5"],  "valgrind": true, "points": 8 },
+        { "desc": "t5: lru3: 13 bins 8 keys",  "args": ["-b", "13", "-t", "5"],  "valgrind": true, "points": 8 },
+        { "desc": "t6: 64 bins 500 keys", "args": ["-b", "64", "-n", "500", "-t", "6"],  "valgrind": true, "points": 7 },
+        { "desc": "t6: 113 bins 1000 keys", "args": ["-b", "113", "-n", "1000", "-t", "6"],  "valgrind": true, "points": 7 },
+        { "desc": "t7: 64 bins 500 keys", "args": ["-b", "64", "-n", "500", "-t", "7"],  "valgrind": true, "points": 7 },
+        { "desc": "t7: 113 bins 1000 keys", "args": ["-b", "113", "-n", "1000", "-t", "7"],  "valgrind": true, "points": 7 },
+        { "desc": "t8: 64 bins 1000 keys", "args": ["-b", "64", "-n", "1000", "-t", "8"],  "valgrind": true, "points": 10 },
+        { "desc": "t8: 251 bins 5000 keys", "args": ["-b", "251", "-n", "5000", "-t", "8"],  "valgrind": true, "points": 10 }        
+      ]
+    }
+  }
+}
