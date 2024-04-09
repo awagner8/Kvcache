@@ -22,7 +22,7 @@
 void remove_kvpair(KVCACHE *kv_cache, KVPAIR *kvpair, unsigned int bin_index) {
     if (kvpair->prev) kvpair->prev->next = kvpair->next;
     else kv_cache[bin_index].list = kvpair->next; // Update head if first element
-    if (kvpair->next) kvpair->next->prev = kvpair->prev;
+    if (kvpair->next) kvpair->next->prev = kvpair->prev; 
 }
 
 // Utility function to add a KVPAIR to the front of its bin
