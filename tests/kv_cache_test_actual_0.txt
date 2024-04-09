@@ -1,0 +1,2 @@
+Testing 1024 kv pairs and 4 bins for test 1
+Test 1: Hits: 0, Misses: 3, Miss Ratio: 1.000000, Writebacks: 0

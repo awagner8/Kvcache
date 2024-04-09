@@ -1,0 +1,2 @@
+Testing 1000 kv pairs and 113 bins for test 6
+Test 6: Hits: 360, Misses: 9640, Miss Ratio: 0.964000, Writebacks: 3153

@@ -1,0 +1,2 @@
+Testing 5000 kv pairs and 251 bins for test 8
+Test 8: Hits: 8145, Misses: 1855, Miss Ratio: 0.185500, Writebacks: 485
